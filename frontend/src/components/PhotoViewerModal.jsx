@@ -19,7 +19,7 @@ export default function PhotoViewerModal({ photos = [], onClose }) {
   const getFullUrl = (url) => {
     if (!url) return '';
     if (url.startsWith('http')) return url;
-    return `http://localhost:5000${url}`;
+    return `https://hostel-complaint-maintenance-system.onrender.com${url}`;
   };
 
   return (

@@ -1,4 +1,4 @@
-const API_BASE_URL = 'http://localhost:5000/api';
+const API_BASE_URL = 'https://hostel-complaint-maintenance-system.onrender.com/api';
 
 function getAuthHeaders() {
   const token = localStorage.getItem('hostelcare_token');
