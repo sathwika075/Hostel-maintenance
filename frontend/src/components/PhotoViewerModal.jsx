@@ -19,7 +19,8 @@ export default function PhotoViewerModal({ photos = [], onClose }) {
   const getFullUrl = (url) => {
     if (!url) return '';
     if (url.startsWith('http')) return url;
-    return `http://localhost:5000${url}`;
+    const backendUrl = import.meta.env.VITE_BACKEND_URL || 'http://localhost:5000';
+    return `${backendUrl}${url}`;
   };
 
   return (
